@@ -66,6 +66,7 @@ Vagrant для локальной разработки
 
 Для удобства работы прописываем в файл hosts, домен для IP:
 
+.. parsed-literal::
     127.0.0.1       localhost
     ...
     192.168.33.101  dev.project-name.ailove.local
