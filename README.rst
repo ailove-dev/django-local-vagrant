@@ -1,7 +1,5 @@
-# django-local-vagrant
-
 Ailove Django Vagrant
-====================+
+=====================
 
 Documentations
 --------------
