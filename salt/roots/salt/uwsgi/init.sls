@@ -41,6 +41,7 @@ uwsgi:
   file.managed:
     - user: www-data
     - group: www-data
+    - template: jinja
     - require:
       - pip: uwsgi
       - pkg: nginx

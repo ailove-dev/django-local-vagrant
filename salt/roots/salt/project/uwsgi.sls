@@ -9,9 +9,8 @@ uwsgi-app:
     - source: salt://project/uwsgi.ini
     - template: jinja
     - makedirs: true
-    - user: vagrant
-    - group: vagrant
     - mode: 755
+    - template: jinja
     - require:
       - pip: uwsgi
 

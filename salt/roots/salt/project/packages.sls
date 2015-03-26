@@ -7,8 +7,5 @@
 
 /home/vagrant/conf:
   file.directory:
-    - user: vagrant
-    - group: vagrant
-    - makedirs: true
     - require:
       - file: /home/vagrant/logs

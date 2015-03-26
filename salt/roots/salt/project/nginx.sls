@@ -11,5 +11,6 @@ nginx-conf:
     - user: vagrant
     - group: vagrant
     - mode: 755
+    - template: jinja
     - require:
       - pkg: nginx

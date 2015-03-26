@@ -14,6 +14,7 @@ pg_hba.conf:
     - user: postgres
     - group: postgres
     - mode: 644
+    - template: jinja
     - require:
       - pkg: postgresql
 
