@@ -3,7 +3,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "precise64"
+  config.vm.box = "hashicorp/precise64"
 
   config.vm.hostname = "dev-server"
 
@@ -17,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "data/", "/home/vagrant/data/", type: "nfs"
   config.vm.synced_folder "conf/", "/home/vagrant/conf/", type: "nfs"
   config.vm.synced_folder "repo/", "/home/vagrant/repo/", type: "nfs"
-  config.vm.synced_folder "logs/", "/home/vagrant/logs/", type: "nfs"
+  # config.vm.synced_folder "logs/", "/home/vagrant/logs/", type: "nfs"
 
   config.vm.provision :salt do |salt|
     salt.minion_config = "salt/minion"
